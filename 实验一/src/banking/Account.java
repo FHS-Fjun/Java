@@ -3,8 +3,8 @@ package banking;
 public class Account {
     private double balance;
 
-    public Account(double bal) {
-        balance = bal;
+    public Account(double bals) {
+        balance = bals;
     }
 
     public double getBalance() {
