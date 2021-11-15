@@ -6,10 +6,10 @@ public class Customer {
     private String lastName;
     private int age;
 
-    public Customer(String f, String l, int cAge) {
-        firstName = f;
-        lastName = l;
-        age = cAge;
+    public Customer(String fn, String ln, int aAge) {
+        firstName = fn;
+        lastName = ln;
+        age = aAge;
     }
 
     public String getFirstName() {
