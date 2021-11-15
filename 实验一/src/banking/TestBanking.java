@@ -6,16 +6,17 @@ public class TestBanking {
     public static void main(String[] args) {
         Customer customer;
         Account account;
-        System.out.println("Creating the customer Bing David.");
-        customer = new Customer("Bing", "David",20);
-        System.out.println("Creating his account with a 300.00 balance.");
-        customer.setAccount(new Account(300.00));
+        // Create an account that can has a 500.00 balance.
+        System.out.println("Creating the customer Jane Smith.");
+        customer = new Customer("Jane", "Smith",20);
+        System.out.println("Creating her account with a 500.00 balance.");
+        customer.setAccount(new Account(500.00));
         account = customer.getAccount();
         // Perform some account transactions
-        System.out.println("Withdraw 50.00: " + account.withdraw(50.00));
-        System.out.println("Deposit 20.50: " + account.deposit(20.50));
-        System.out.println("Withdraw 60.00: " + account.withdraw(60.00));
-        System.out.println("Withdraw 361.00: " + account.withdraw(361.00));
+        System.out.println("Withdraw 150.00: " + account.withdraw(150.00));
+        System.out.println("Deposit 22.50: " + account.deposit(22.50));
+        System.out.println("Withdraw 47.62: " + account.withdraw(47.62));
+        System.out.println("Withdraw 400.00: " + account.withdraw(400.00));
         // Print out the final account balance
         System.out.println("Customer [" + customer.getLastName()
                 + ", " + customer.getFirstName()
