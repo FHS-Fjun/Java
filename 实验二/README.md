@@ -11,6 +11,7 @@
    3）打印学生课表信息（包括：编号、课程名称、上课地点、时间、授课教师）
  
 # 核心代码
+'''JAVA
   //老师开设课程
     public Course addCourse(int number, String classname, String spot, String time){
         Course course = new Course(number,classname,spot,time,this.getName());
@@ -19,7 +20,8 @@
         }
         this.courseList.add(course);
         return course;
-   //选课方法
+
+  //选课方法
     public void selectCourse(Course course){
         if (this.courseList == null){
             this.courseList = new ArrayList<>();
@@ -27,7 +29,7 @@
         this.courseList.add(course);
     }
 
-     //退课方法
+  //退课方法
     public void unSelectCourse(Course course){
         if (this.courseList != null){
             if (this.courseList.contains(course)){
@@ -35,13 +37,21 @@
             }
         }
     }
+'''
 # 系统运行结果
  学生1【课程-】课程信息:
+ 
  C
+ 
  Unix
+ 
  Go
-  学生2【课程-】课程信息:
-  JAVA
-  Python
+ 
+ 学生2【课程-】课程信息:
+ 
+ JAVA
+  
+ Python
+  
 # 感想
  对类设计方法有了新的理解，懂得了如果用构造方法实例化对象。
