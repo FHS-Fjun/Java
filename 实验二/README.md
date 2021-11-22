@@ -19,7 +19,7 @@
         }
         this.courseList.add(course);
         return course;
- //选课方法
+   //选课方法
     public void selectCourse(Course course){
         if (this.courseList == null){
             this.courseList = new ArrayList<>();
@@ -27,7 +27,7 @@
         this.courseList.add(course);
     }
 
-    //退课方法
+     //退课方法
     public void unSelectCourse(Course course){
         if (this.courseList != null){
             if (this.courseList.contains(course)){
@@ -40,8 +40,8 @@
  C
  Unix
  Go
- 学生2【课程-】课程信息:
- JAVA
- Python
+  学生2【课程-】课程信息:
+  JAVA
+  Python
 # 感想
  对类设计方法有了新的理解，懂得了如果用构造方法实例化对象。
